@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font: 100%/1.5 Roboto, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+input {
+    -webkit-appearance: textfield;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #009688;
+    padding: 0 16px;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 54px;
+    color: white;
+}
+
+.navbar-row {
+    height: 54px;
+    padding: 8px 0;
+}
+
+.search-container {
+    height: 100%;
+    border-radius: 2px;
+    background: white;
+    padding: 0 4px;
+}
+.search-input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    background: white;
+}
+
