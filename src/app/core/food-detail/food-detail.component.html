@@ -1,0 +1,19 @@
+<div class="food-detail" *ngIf="food | async as food; else notfound">
+
+  <div class="food-name">{{food?.name}}</div>
+
+  <table class="nutrition-facts">
+    <tr class="row" *ngFor="let nutrients of food?.nutrients ">
+      <th class="left">{{nutrients.nutrient}}</th>
+      <th class="right">{{nutrients.gm}} {{nutrients.unit}}</th>
+    </tr>
+  </table>
+
+  <div class="fab" (click)="removeFromList(food)" [style.margin-top.px]="16">
+    <span class="material-icons">remove</span></div>
+</div>
+<ng-template #notfound>
+  <div style="margin: 24px" *ngIf="!(loading | async)">
+    <span>Nothing found</span>
+  </div>
+</ng-template>

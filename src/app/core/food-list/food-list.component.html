@@ -1,0 +1,11 @@
+<div class="list-container">
+<div class="list-item" *ngFor="let food of (foodList | async) as food; let i = index;" [routerLink]="[i]">
+  <div class="sublist">
+    <span class="list-title">{{food.name}}</span>
+    <span class="list-subtitle">Energy</span>
+  </div>
+  <div class="list-info" (click)="removeFood(food)">
+    <i class="material-icons">delete</i>
+  </div>
+</div>
+</div>

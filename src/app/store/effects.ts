@@ -6,6 +6,9 @@ import { Observable } from 'rxjs/Observable';
 import * as FoodActions from "./actions";
 import { NutritionService } from ".././services/nutrition.service";
 
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/switchMap';
+
 
 @Injectable()
 

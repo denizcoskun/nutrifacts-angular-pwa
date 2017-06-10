@@ -38,11 +38,33 @@ outline: none;
 background: #fafafa;
 }
 
+table {
+    margin: 32px 0;
+}
+
+tr {
+    height: 32px;
+}
+
+th {
+    font-weight: normal;
+}
+
+th.left {
+    text-align: left;
+}
+
+th.right {
+    text-align: right;
+    font-weight: 500;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
     background-color: #009688;
     padding: 0 16px;
+    position: relative;
 }
 
 .navbar-top {
@@ -102,4 +124,111 @@ background: #fafafa;
 .subheader {
     font-size: 20px;
     margin: 16px 0;
+}
+
+.food-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-name{
+    padding: 16px;
+    font-size: 18px;
+    border-bottom: 1px solid grey;
+}
+
+
+.fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #2962FF;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+.fab:hover{
+    background-color: #0D47A1;
+}
+
+.list-container{
+    margin-top: 8px;
+}
+
+.list-item {
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.list-item:hover{
+    background: #fafafa;
+}
+.sublist{
+    display: flex;
+    flex-direction: column;
+}
+.list-title {
+    max-width: 70vw;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-subtitle {
+    font-size: 14px;
+    color: grey;
+}
+
+.list-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: grey;
+    cursor: pointer;
+}
+
+.list-info:hover{
+    background: #e3e3e3;
+}
+
+.progress-line, .progress-line:before {
+  height: 5px;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.progress-line {
+  background-color: #66BB6A;
+  display: -webkit-flex;
+  display: flex;
+}
+.progress-line:before {
+  background-color: #FFEB3B;
+  content: '';
+  -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@-webkit-keyframes running-progress {
+  0% { margin-left: 0px; margin-right: 100%; }
+  50% { margin-left: 25%; margin-right: 0%; }
+  100% { margin-left: 100%; margin-right: 0; }
+}
+@keyframes running-progress {
+  0% { margin-left: 0px; margin-right: 100%; }
+  50% { margin-left: 25%; margin-right: 0%; }
+  100% { margin-left: 100%; margin-right: 0; }
 }
