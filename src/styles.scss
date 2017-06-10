@@ -19,6 +19,25 @@ input {
     -webkit-appearance: textfield;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    max-width: 100%;
+    list-style: none;
+    padding: 16px 8px;
+}
+
+li + li {
+     border-top: 1px solid #ddd;
+}
+
+li:focus{
+outline: none;
+background: #fafafa;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
@@ -35,6 +54,8 @@ input {
 }
 
 .navbar-row {
+    display: flex;
+    align-items: center;
     height: 54px;
     padding: 8px 0;
     color: white;
@@ -42,6 +63,7 @@ input {
 
 .search-container {
     height: 100%;
+    width: 100%;
     border-radius: 2px;
     background: white;
     padding: 0 4px;
@@ -58,7 +80,15 @@ input {
 .container {
     display: flex;
     flex: 1;
-    background: white;
+    justify-content: center;
+    padding: 0 16px;
+    overflow: auto;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    padding: 48px;
 }
 
 .material-icons {
@@ -71,5 +101,5 @@ input {
 
 .subheader {
     font-size: 20px;
-    margin: 16px;
+    margin: 16px 0;
 }

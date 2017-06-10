@@ -5,11 +5,14 @@
   </div>
   <div class="navbar-row">
     <div class="search-container">
-      <input class="search-input" type="search" name="" placeholder="Search Food...">
+      <input #input class="search-input" 
+              [routerLink]="['/app']"
+              type="search" name="" 
+              placeholder="Search Food...">
     </div>
   </div>
   <div class="navbar-row">
-    Home
+    {{ title | async }}
   </div>
 </div>
 <div class="container">

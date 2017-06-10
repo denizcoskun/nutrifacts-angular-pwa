@@ -1,3 +1,11 @@
-<p>
-  search-result works!
-</p>
+<div *ngIf="results | async as results; else loading">
+<ul>
+      <li class="search-result-item" *ngFor="let result of results" [routerLink]="[result.id]">
+        <span class="search-result-item-name">{{result.name}}</span>
+      </li>
+</ul>
+</div>
+<div #loading class="loading">
+  <span class="material-icons xl">search</span>
+</div>
+
