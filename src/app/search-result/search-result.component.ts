@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchResult } from '../../models/search-result';
+import { SearchResult } from 'app/models/search-result';
 import { Observable } from 'rxjs/Observable';
 
 import { Store } from '@ngrx/store';
-import * as fromRoot from '../../store/reducer';
-import * as Actions from '../../store/actions';
+import * as fromRoot from 'app/store/reducer';
+import * as Actions from 'app/store/actions';
 
 
 @Component({

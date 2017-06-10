@@ -1,8 +1,0 @@
-:host() {
-    color: grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    margin: 16px;
-}

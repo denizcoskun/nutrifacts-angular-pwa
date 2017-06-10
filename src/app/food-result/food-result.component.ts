@@ -44,7 +44,7 @@ export class FoodResultComponent implements OnInit, OnDestroy {
   
   addToList(): void{
     this.store.dispatch(new Actions.AddFood());
-    this.router.navigate(['app/mylist']);
+    this.router.navigate(['mylist']);
   }
 
   ngOnDestroy() {

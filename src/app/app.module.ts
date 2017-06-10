@@ -4,24 +4,32 @@ import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
 
  import { StoreModule } from '@ngrx/store';
  import { EffectsModule } from '@ngrx/effects';
 import { reducer } from './store/reducer';
 import { FoodEffects } from './store/effects';
 import { NutritionService } from "app/services/nutrition.service";
+import { SearchResultComponent } from "app/search-result/search-result.component";
+import { FoodResultComponent } from "app/food-result/food-result.component";
+import { FoodListComponent } from "app/food-list/food-list.component";
+import { FoodDetailComponent } from "app/food-detail/food-detail.component";
 
 const routes: Routes = [
-                { path: '', pathMatch:'full', redirectTo: 'welcome' },
-                 {path: 'welcome', component: WelcomeComponent },
-                 {path: 'app', loadChildren: './core/core.module#CoreModule' }
-              ];
+  { path: '', pathMatch:'full', redirectTo: 'search'},
+  { path: 'search', component: SearchResultComponent},
+  { path: 'search/:id', component: FoodResultComponent },
+  { path: 'mylist', component: FoodListComponent },
+  { path: 'mylist/:id', component: FoodDetailComponent }
+  ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    SearchResultComponent,
+    FoodDetailComponent,
+    FoodListComponent,
+    FoodResultComponent
   ],
   imports: [
     BrowserModule,

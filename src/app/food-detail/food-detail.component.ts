@@ -41,7 +41,7 @@ export class FoodDetailComponent implements OnInit, OnDestroy {
   }
   removeFromList(food: Food): void {
     this.store.dispatch(new Actions.RemoveFood(food));
-    this.router.navigate(['myfoods']);
+    this.router.navigate(['mylist']);
   }
 
   ngOnDestroy() {
