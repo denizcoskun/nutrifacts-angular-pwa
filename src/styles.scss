@@ -37,6 +37,7 @@ input {
 .navbar-row {
     height: 54px;
     padding: 8px 0;
+    color: white;
 }
 
 .search-container {
@@ -60,3 +61,15 @@ input {
     background: white;
 }
 
+.material-icons {
+    &.xl {
+        font-size: 72px;
+        color: grey;
+    }
+
+}
+
+.subheader {
+    font-size: 20px;
+    margin: 16px;
+}
