@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "beslen-app"
+    "nutri": "nutrifacts-app",
+    "default": "nutrifacts-app",
+    "circle": "circle-6068c"
   }
 }

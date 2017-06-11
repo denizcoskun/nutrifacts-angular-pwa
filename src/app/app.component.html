@@ -5,9 +5,9 @@
   </div>
   <div class="navbar-row">
     <div class="search-container">
-      <input #input class="search-input" 
+      <input [formControl]="searchControl" class="search-input" 
               [routerLink]="['/']"
-              type="search" name="" 
+              type="search" aria-label="input" 
               placeholder="Search Food...">
     </div>
   </div>

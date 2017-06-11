@@ -62,7 +62,7 @@ th.right {
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: #009688;
+    background-color: #00796B;
     padding: 0 16px;
     position: relative;
 }
@@ -114,7 +114,7 @@ th.right {
     align-items: center;
     flex: 1;
     padding: 48px;
-    color: grey;
+    color: rgba(0,0,0,0.7);
 }
 
 .material-icons {
