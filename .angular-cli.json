@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "icons.css"
+        "material-icons.css"
       ],
       "scripts": [],
       "serviceWorker": true,
