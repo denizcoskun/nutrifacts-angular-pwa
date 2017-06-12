@@ -11,9 +11,8 @@ import { SearchResult } from '../models/search-result';
 export class NutritionService {
   apiKey: string;
 
-  constructor(private http: Http) { 
-    this.apiKey = 'KxhNfT3pMwlnn21HUCCs61iG2JwT9EmMrgOnOiU7';
-
+  constructor(private http: Http) {
+    this.apiKey = 'YOUR_API_KEY';
   }
 
   searchFood(query: string): Observable<SearchResult[]> {

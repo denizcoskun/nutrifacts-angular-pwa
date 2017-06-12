@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { FormControl } from "@angular/forms";
+import { FormControl } from '@angular/forms';
 
 import { Store } from '@ngrx/store';
 import * as fromRoot from './store/reducer';
@@ -24,10 +24,10 @@ export class AppComponent implements OnInit {
   title: Observable<string>;
   loading: Observable<boolean>;
   searchControl = new FormControl('');
-  
+
   constructor(private store: Store<fromRoot.State>) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.title = this.store.select(state => state.title);
     this.loading = this.store.select(state => state.loading);
     this.searchControl.valueChanges
@@ -47,5 +47,5 @@ export class AppComponent implements OnInit {
       .switch()
       .subscribe();
       */
-  } 
+  };
 }
